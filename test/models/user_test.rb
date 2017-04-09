@@ -4,7 +4,7 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   def setup
-    @user = User.new(name: 'Example User', email: 'user@example.com', password:
+    @user = User.new(name: 'Example User', email: 'users@example.com', password:
         'foobar', password_confirmation: 'foobar')
   end
 
@@ -33,7 +33,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'email validation should reject invalid addresses' do
-    invalid_addresses = %w[user@example,com user_at_foo.org user.name@example.
+    invalid_addresses = %w[users@example,com user_at_foo.org users.name@example.
                            foo@bar_baz.com foo@bar+baz.com]
     invalid_addresses.each do |invalid_address|
       @user.email = invalid_address
