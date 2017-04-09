@@ -20,6 +20,7 @@ gem 'turbolinks', '5.0.1'
 gem 'jbuilder', '2.4.1'
 gem 'bootstrap-sass', '3.3.6'
 gem 'sass-rails', '>= 3.2'
+gem 'cancancan', '~> 1.10'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
